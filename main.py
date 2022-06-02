@@ -1,9 +1,9 @@
 import random
 
+# work in progress
+
 DeinName=input("Wie heißt du?\n")
 BistDuMutig=input("Bist du mutig? Tippe 'Ja' oder 'Nein'.\n")
-
-
 
 
 print(f"Dein Name lautet {DeinName}")
@@ -42,16 +42,9 @@ if (Start=="2" or Augengeschlossen =="1"):
                 MutigInDerBibliothek= input("Der kopflose Ritter ist die Treppe hinaufgegangen. Um die Bibliothek nun zu verlassen drücke 1\n")
             else:
                 print("In Windeseile versteckst du dich hinter einem Bücherregal. Du spähst hinter deiner Deckung hervor und erkennst schockiert, dass ein kopfloser Ritter mit einem Schwert in der Hand durch die Bibliothek stampft. Vor lauter Panik stößt du das Bücherregal um. Obwohl der Ritter keinen Kopf hat, scheint er dich bemerkt zu haben. Du versuchst vor ihm davon zu laufen, doch er ist unnatürlich schnell. Nach einer kurzen Verfolgungsjagd durch die Bibliothek hat er dich erwischt... Ende.")
-
-
-
-
-
-
-
-
-
-
-
-
+        if (Flur=="2"):
+            print("Du kommst an einem Gemälde vorbei.")
+            Gemälde= ("Möchtest du es näher betrachten? 1: Ja. 2: Nein. ")
+            if (Gemälde=="1"):
+                print("Auf dem Gemälde ist eine junge Frau mit langen blonden Haar zu sehen, die eine rote Rose in der Hand hält. Sie lächelt den Betrachter an. Das erfreut den Kunstliebhaber!")
 
