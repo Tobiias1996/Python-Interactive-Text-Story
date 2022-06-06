@@ -56,14 +56,25 @@ if (Start=="2" or Augengeschlossen =="1"):
                  IchMagKunst=""
             else:
                 print("fehlerhafte Eingabe")
-            if (IchMagKunst=="1" or GemaeldeNichtAngesehen=="1"): #Bisher Ungelöstes Problem
-                print ("Du gehst einige Schritte weiter und siehst eine Leiter, die auf den Dachboden zu führen scheint. Ob es eine gute Idee, dort hinauf zu gehen?")
+            if (IchMagKunst=="1" or GemaeldeNichtAngesehen=="1"): 
+                print ("Du gehst einige Schritte weiter und siehst eine Leiter, die auf den Dachboden zu führen scheint. Ob es eine gute Idee, dort hinauf zu gehen? Lassen wir deine Persönlichkeit entscheiden!")
                 DachbodenLeiter=input("Drücke um fortzufahren 1\n")
             else:
                 print ("fehlerhafte Eingabe")
             if (DachbodenLeiter=="1" and BistDuMutig=="Ja"):
                 print ("Mutig, wie du bist, überlegst du nicht lange und erklimmst den Dachboden. Dort oben ist es stockdunkel, sodass du dich tasten fortbewegst. Plötzlich fühlst du einen durchdringenden Schmerz in deiner Hand. Du hast in eine Mausefalle gefasst! Autsch!")
                 Mausefalle=input("Du jaulst laut auf und zappelst mit der Hand hin und her. Was tust du denn jetzt bloß? 1: Ganz ruhig bleiben und dich erinnern, was dein Großvater dir in solchen Situationen geraten hat. 2: Dich nach einem Hilfsmittel umsehen\n")
+                if (Mausefalle=="1"):
+                    print("Dein Finger steckt in einer Mausefalle! Wer kann da schon ruhig bleiben? Sieh zu, dass du deinen Finger da irgendwie rausbekommst!")
+                    ÜberWeisheitNachgedacht=input("Zunächst einmal brauchst du Licht. Unten im Flur war es deutlich heller als hier oben. Drücke 1, um den Dachboden zu verlassen!\n")
+            if (Mausefalle=="2" or ÜberWeisheitNachgedacht=="1"):
+                print("Verzweifelt rennst du zurück zur Dachenbodenluke. Gerade als du die Leiter hinabsteigen willst, hörst du plötzlich schwere Schritte. Neben dem pochenden Schmerz in deinem Finger mischt sich nun auch Unbehagen dazu. Wer kann das sein?")
+                DachbodenlukeSchritte=input ("Glaubst du, es ist eine gute Idee in einem unheimlichen Haus keine Bedenken bezüglich fremder Schritte zu haben? 1: Ja. 2: Nein\n")
+                if (DachbodenlukeSchritte=="1"):
+                    print("Was scheren dich die Schritte? Dein Finger droht ernsthaft beschädigt zu werden! Vielleicht kann man dir ja sogar helfen? Du kletters die Leiter runter und sieht wer der Urheber der Schritte ist: Ein kopfloser Ritter mit Schwert. Einen Moment später tut dir nicht nur dein Finger höllisch weh... Ende.")
+
+
+
 
 
 
